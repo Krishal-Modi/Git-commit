@@ -98,14 +98,44 @@ If the above command does not work then use
 
 ########### Now if someone make changes in the files then perform ###########
 
-> git status
 
-> git add .
 
-> git commit
 
-> git push -u origin main
 
-or 
 
-> git push -f origin main
+>$ git status
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+  		(use "git restore --staged <file>..." to unstage)
+        modified:   Git-commit.txt
+
+	Changes not staged for commit:
+  	(use "git add <file>..." to update what will be committed)
+  	(use "git restore <file>..." to discard changes in working directory)
+        modified:   Git-commit.txt
+
+
+>$ git add .
+
+>$ git commit -m "update file"
+	[main d578284] update file
+ 	1 file changed, 21 insertions(+), 1 deletion(-)
+
+>$ git pull origin main
+	From https://github.com/Krishal-Modi/Git-commit
+ 	* branch            main       -> FETCH_HEAD
+	Already up to date.
+
+>$ git push -u origin main
+	Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (2/2), done.
+	Writing objects: 100% (3/3), 404 bytes | 404.00 KiB/s, done.
+	Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+	remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+	To https://github.com/Krishal-Modi/Git-commit.git
+   	9ed2321..d578284  main -> main
+	branch 'main' set up to track 'origin/main'.
