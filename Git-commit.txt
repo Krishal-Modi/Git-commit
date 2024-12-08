@@ -1,4 +1,4 @@
-########### How to commit on Github using Git 
+########### How to commit on Github using Git ###########
 
 
 >$ git init
@@ -89,3 +89,23 @@ If the above command does not work then use
 	To https://github.com/Krishal-Modi/WeatherApp.git
 	 + 4cb315f...69b4898 main -> main (forced update)
 
+
+
+
+
+
+
+
+########### Now if someone make changes in the files then perform ###########
+
+> git status
+
+> git add .
+
+> git commit
+
+> git push -u origin main
+
+or 
+
+> git push -f origin main
